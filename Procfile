@@ -1,0 +1,1 @@
+web: gunicorn wisfinitv0.wsgi

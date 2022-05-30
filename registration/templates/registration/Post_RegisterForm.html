@@ -1,0 +1,538 @@
+{% extends 'Head_FootMain.html' %}
+{% load static %}
+{%load crispy_forms_tags%}
+
+{% block content %}
+<!-- Body -->
+
+<script>
+
+</script>
+
+
+<!-- form -->
+
+<script src="{% static 'wisfinitv0/assets/tags/tagify.min.js' %}"></script>
+<script src="{% static 'wisfinitv0/assets/tags/tagify.polyfills.min.js' %}"></script>
+<link href="{% static 'wisfinitv0/assets/tags/tagify.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- Page content -->
+<section class="position-relative h-100 pt-5 pb-4">
+
+    <!-- Sign up form -->
+    <div class="container d-flex flex-wrap justify-content-center justify-content-xl-start h-100 pt-5" style="align-content: baseline; max-width: 80%;">
+        <div class="w-100 align-self-end pt-1 pt-md-4 pb-4" style="">
+            <h1 class="text-center text-xl-start">Let's Get Started</h1>
+            <p class="text-center text-xl-start pb-3 mb-3">Won't take more than 2 minutes </p>
+            <!-- Deleted here-->
+
+
+            <!-- Link swiper slides to any content via swiper-tabs. Place outside of any container -->
+            <div class="position-relative py-lg-4" >
+
+                <!-- Swiper tabs -->
+
+
+                <!-- Swiper slider -->
+                <div class="container position-relative zindex-5 " style="max-width: 100%;">
+                    <div class="row py-2 py-md-3">
+                        <div class="col-xl-5 col-lg-7 col-md-9">
+
+                            <!-- Slider controls (Prev / next) -->
+                            <!--                            <div class="d-flex justify-content-center justify-content-md-start pb-3 mb-3">-->
+                            <!--                                <button type="button" id="case-study-prev" class="btn btn-prev btn-icon btn-sm bg-white me-2">-->
+                            <!--                                    <i class="bx bx-chevron-left"></i>-->
+                            <!--                                </button>-->
+                            <!--                                <button type="button" id="case-study-next" class="btn btn-next btn-icon btn-sm bg-white ms-2">-->
+                            <!--                                    <i class="bx bx-chevron-right"></i>-->
+                            <!--                                </button>-->
+                            <!--                            </div>-->
+
+                            <style>
+                            .btn-check:checked+.btn-outline-primary, .btn-check:active+.btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+                            color: #5c4d4d;
+                            background-color: #d2d2f4;
+                            border-color: #6366f1;
+                            }
+.shadow-primary2 {
+    box-shadow: 0 0.5rem 1.125rem -0.5rem rgb(0 0 0 / 70%) !important;
+}
+
+
+
+</style>
+
+                            <!-- Card -->
+                            <div class="card bg-white shadow-sm p-3">
+                                <div class="card-body">
+                                    <div class="swiper" data-swiper-options='{
+              "spaceBetween": 30,
+              "loop": true,
+              "tabs": true,
+              "pagination": {
+                "el": "#case-study-pagination",
+                "clickable": true
+              },
+              "navigation": {
+                "prevEl": "#case-study-prev",
+                "nextEl": "#case-study-next",
+              }
+            }'>
+
+
+
+
+
+                                        <div class="swiper-wrapper">
+
+
+
+                                            <!-- Item -->
+                                            <div class="swiper-slide" data-swiper-tab="#image-1">
+
+
+                                                <div class="progress mb-3">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+
+
+                                                <img src={% static '/wisfinitv0/assets/img/landing/software-company/transition_logo.png' %} class="d-block mb-3" width="72" alt="Logo">
+                                                <h3 class="mb-2">What you want to achieve with WisFinit?</h3>
+                                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">What does transition means to you in next one month</p>
+                                                <p class="pb-2 pb-lg-3 mb-3">Understanding your aspirations helps us personalise WisFinit for you. We don't share your data, feel free to enter your thoughts OPENLY!</p>
+
+
+                                                <button type="button" class="btn btn-primary shadow-primary" style="margin: 1%;" onclick = "showSlides(3)" >I am looking for a transition</button>
+                                                <button type="button" class="btn btn-info shadow-info" style="margin: 1%;" onclick = "showSlides(2)" >I recently went through a transition</button>
+                                                <button type="button" class="btn btn-success shadow-success" style="margin: 1%;" onclick = "showSlides(2)" >Exploring</button>
+                                                <button type="button" class="btn btn-warning shadow-warning" style="margin: 1%;" onclick = "showSlides(2)" >Starting a new business</button>
+                                                <button type="button" class="btn btn-danger shadow-danger" style="margin: 1%;" onclick = "showSlides(2)" >Recently laid off</button>
+
+                                                </br>
+
+
+
+                                                <!--                                                <a id="case-study-next2" class="btn btn-primary shadow-primary2" style="margin-top: 2.5%;margin-bottom: 2%; justify-content: let;background-color: #131022;" >-->
+                                                <!--                                                    <i class="bx bx-chevron-right fs-5 lh-1 me-1"></i>-->
+                                                <!--                                                    Personalise my Journey</a>-->
+
+                                            </div>
+
+
+
+                                            <!-- Item -->
+                                            <div class="swiper-slide" data-swiper-tab="#image-2">
+                                                <div class="progress mb-3">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                                <img src={% static '/wisfinitv0/assets/img/landing/software-company/transition_logo.png' %} class="d-block mb-3" width="72" alt="Logo">
+                                                <h3 class="mb-2">Please Upload Your CV!</h3>
+                                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Let us map your journey</p>
+
+                                                <p class="pb-2 pb-lg-3 mb-3">Entering more than 10 tags improves matching accuracy by 76%</p>
+                                                <form action="" method="post" enctype="multipart/form-data">
+                                                    {% csrf_token %}
+                                                    <div class="mb-4">
+                                                        <label for="myFile" class="form-label">File</label>
+                                                        <input class="form-control" type="file" id="myfile" name="myfile" style="border-color: white !important;background-color: #141022;">
+                                                    </div>
+                                                    <button class="btn btn-outline-primary" type="submit">
+                                                        <i class="bx bxs-plane-take-off fs-lg me-2"></i>
+                                                        Fill in for me
+                                                    </button>
+
+                                                </form>
+
+                                                </br>
+                                                <button class="btn btn-outline-success btn-icon rounded-circle" type="button" onclick="showSlides(1)">
+                                                    <i class="bx bx-home"></i>
+                                                </button>
+                                                <button class="btn btn-primary btn-icon rounded-circle" type="button" onclick="showSlides(1)">
+                                                    <i class='bx bx-chevron-left'></i>
+                                                </button>
+                                                 <button class="btn btn-primary btn-icon rounded-circle" type="button" onclick="showSlides(6)">
+                                                     <i class='bx bx-chevron-right'></i>
+                                                </button>
+
+                                            </div>
+
+
+                                            <div class="swiper-slide" data-swiper-tab="#image-2">
+                                                <div class="progress mb-3">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                                <img src={% static '/wisfinitv0/assets/img/landing/software-company/transition_logo.png' %} class="d-block mb-3" width="72" alt="Logo">
+                                                <h3 class="mb-2">What does transition means to you?</h3>
+                                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Try anything from industry/functional area/geography</p>
+                                                <p class="pb-2 pb-lg-3 mb-3">Entering more than 10 tags improves matching accuracy by 76%</p>
+
+                                                <form id="ToTransitionForm"  action="" method="post">
+                                                    {% csrf_token %}
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">I plan to transition from?</label>
+                                                    <li style="font-size: smaller !important;margin-bottom: 1.5%;"> {{ form.TransitionTags_From }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">I plan to transition to?</label>
+                                                    <li style="font-size: smaller !important;"> {{ form.TransitionTags_To }}</li>
+                                                    </br>
+                                                    <button class="btn btn-outline-primary" type="button" onclick = "showSlides(2)">
+                                                        <i class="bx bxs-plane-take-off fs-lg me-2"></i>
+                                                        Okay
+                                                    </button>
+
+                                                </form>
+
+                                                </br>
+
+
+                                            </div>
+
+                                            <!--Slide 4-->
+                                            <div class="swiper-slide" data-swiper-tab="#image-2">
+                                                <div class="progress mb-3">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                                <img src={% static '/wisfinitv0/assets/img/landing/software-company/transition_logo.png' %} class="d-block mb-3" width="72" alt="Logo">
+                                                <h3 class="mb-2">Sharing is caring - Why not start with wisdom!</h3>
+                                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Wisdom comes in all shapes and sizes</p>
+                                                <p class="pb-2 pb-lg-3 mb-3">Entering more than 10 tags improves matching accuracy by 76%</p>
+
+                                                <form id="Past_Form"  action="" method="post">
+                                                    {% csrf_token %}
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">Which industries define you?</label>
+                                                    <li style="font-size: smaller !important;;margin-bottom: 1.5%;">{{ form_present.Tags_IndustryPresent }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">What are different hats you wore?</label>
+                                                    <li style="font-size: smaller !important;;margin-bottom: 1.5%;">{{ form_present.Tags_FunctionalRolesPresent }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">Which geography defines you?</label>
+                                                    <li style="font-size: smaller !important;margin-bottom: 1.5%;">{{ form_present.Tags_GeoPresent }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">Which geography defines you?</label>
+                                                    <li style="font-size: smaller !important;">{{ form_present.Tags_EducationPastPresent }}</li>
+                                                    </br>
+                                                    <button class="btn btn-outline-primary" type="button" onclick = "showSlides(5)">
+                                                        <i class="bx bx-street-view me-2"></i>
+                                                        Next
+                                                    </button>
+
+                                                </form>
+
+                                            </div>
+
+
+                                            <!--Slide 5-->
+
+                                            <div class="swiper-slide" data-swiper-tab="#image-2">
+                                                <div class="progress mb-3">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                                <img src={% static '/wisfinitv0/assets/img/landing/software-company/transition_logo.png' %} class="d-block mb-3" width="72" alt="Logo">
+                                                <h3 class="mb-2">Sharing is caring - Why not start with wisdom!</h3>
+                                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Wisdom comes in all shapes and sizes</p>
+                                                <p class="pb-2 pb-lg-3 mb-3">Entering more than 10 tags improves matching accuracy by 76%</p>
+
+                                                <form id="Past_Form"  action="" method="post">
+                                                    {% csrf_token %}
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">Which industries define you?</label>
+                                                    <li style="font-size: smaller !important;;margin-bottom: 1.5%;">{{ form_past.Tags_IndustryPast }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">What are different hats you wore?</label>
+                                                    <li style="font-size: smaller !important;;margin-bottom: 1.5%;">{{ form_past.Tags_FunctionalRolesPast }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">Which geography defines you?</label>
+                                                    <li style="font-size: smaller !important;margin-bottom: 1.5%;">{{ form_past.Tags_GeoPast }}</li>
+
+                                                    <label for="Test Field" class="form-label fs-base" style="color: black;font-weight: 100;font-size: smaller !important;">Your educational background?</label>
+                                                    <li style="font-size: smaller !important;">{{ form_past.Tags_EducationPast }}</li>
+                                                    </br>
+                                                    <button class="btn btn-outline-primary" type="button" onclick = "showSlides(4)">
+                                                        <i class="bx bx-street-view me-2"></i>
+                                                        Next
+                                                    </button>
+
+                                                </form>
+
+                                            </div>
+
+                                            <!--Slide 6-->
+
+                                            <div class="swiper-slide" data-swiper-tab="#image-2">
+                                                <div class="progress mb-3">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+
+                                                <img src={% static '/wisfinitv0/assets/img/landing/software-company/transition_logo.png' %} class="d-block mb-3" width="72" alt="Logo">
+                                                <h3 class="mb-2">Sharing is caring - Why not start with wisdom!</h3>
+                                                <p class="fs-sm text-muted border-bottom pb-3 mb-3">Wisdom comes in all shapes and sizes</p>
+
+                                                <p class="pb-2 pb-lg-3 mb-3">Entering more than 10 tags improves matching accuracy by 76%</p>
+                                                <!--                                                <p>{{data}}</p>-->
+
+                                                <input name='basic' class="form-control-sm" value= '{{data}}' style="font-size: 80%;">
+                                                </br>
+                                                <p class="fs-6">But, we understand you are beyond your CV! <br> Select all that apply</p>
+
+
+                                                <div style="line-height: 3;text-align: center;"> <button type="button" id="click" class="btn btn-primary rounded-pill"style="font-size: 0.7rem; margin-left: 1%;">Took a career gap</button> <button type="button" id="industry" class="btn btn-danger rounded-pill"style="font-size: 0.7rem; margin-left: 1%;"  onclick="indsutrytransition()">Switched industry</button>
+                                                    <button type="button" class="btn btn-success rounded-pill"style="font-size: 0.7rem; margin-left: 1%;">Switched functional area</button><button type="button" class="btn btn-warning rounded-pill"style="font-size: 0.7rem; margin-left: 1%;" onclick="geotransition()">Switched geography</button>
+                                                    <button type="button"  id="startedBusiness" class="btn btn-info rounded-pill"style="font-size: 0.7rem;">Started my own business</button>
+
+                                                </div>
+                                                </br>
+                                                <button class="btn btn-outline-success btn-icon rounded-circle" type="button" onclick="showSlides(1)">
+                                                    <i class='bx bx-home'></i>
+                                                </button>
+                                                 <button class="btn btn-primary btn-icon rounded-circle" type="button" onclick="showSlides(2)">
+                                                     <i class='bx bx-chevron-left'></i>
+                                                </button>
+                                                 <button class="btn btn-primary btn-icon rounded-circle" type="button" onclick="showSlides(2)">
+                                                     <i class='bx bx-chevron-right'></i>
+                                                </button>
+
+
+                                                <script src="https://cdn.jsdelivr.net/npm/@yaireo/tagify@3.1.0/dist/tagify.min.js"></script>
+                                                <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+                                                <script>
+    var input = document.querySelector('input[name=basic]');
+    var tagify = new Tagify(input);
+
+    $("#click").on("click", function() {
+      var n = "Took a career gap";
+      var tags = [];
+      tags.push(n);
+      tagify.addTags(tags);
+    })
+
+    $("#startedBusiness").on("click", function() {
+      var n = "Started my own business";
+      var tags = [];
+      tags.push(n);
+      tagify.addTags(tags);
+    })
+
+
+
+$("body").on("click", ".btn-okindustry", function(){
+<!--      $("#modlindustrytransition").on("click", function() {-->
+      var n = "Switched industry from "+document.getElementById("from_industry").value + " to "+document.getElementById("to_industry").value;
+      var tags = [];
+      tags.push(n);
+      tagify.addTags(tags);
+      $("#industryswitch").modal('hide');
+
+    })
+
+
+
+$("body").on("click", ".btn-okgeo", function(){
+<!--      $("#modlindustrytransition").on("click", function() {-->
+      var n = "Switched geography from "+document.getElementById("from_geo").value + " to "+document.getElementById("to_geo").value;
+      var tags = [];
+      tags.push(n);
+      tagify.addTags(tags);
+      $("#geographyswitch").modal('hide');
+
+    })
+
+                                                </script>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pagination (bullets) -->
+                                <div class="dark-mode pt-4 mt-3">
+                                    <div id="case-study-pagination" class="swiper-pagination position-relative bottom-0"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- Deleted here-->
+
+
+            <!-- Background -->
+            <div class="position-absolute top-0 end-0 w-50 h-100 bg-position-center bg-repeat-0 bg-size-cover d-none d-xl-block" style="background-image: url({% static 'wisfinitv0/assets/img/account/signin-bg.jpg' %});"></div>
+
+
+            <a href="#top" class="btn-scroll-top" data-scroll>
+                <span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span>
+                <i class="btn-scroll-top-icon bx bx-chevron-up"></i>
+            </a>
+
+
+        </div>
+</section>
+</main>
+
+
+<!-- Back to top button -->
+
+
+
+<!-- Vendor Scripts -->
+<script src="{% static 'wisfinitv0/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'wisfinitv0/assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js' %}"></script>
+<script src="{% static 'wisfinitv0/assets/vendor/cleave.js/dist/cleave.min.js' %}"></script>
+
+
+<script>
+
+
+
+
+function showSlides(n) {
+
+
+    /* We refer to the elements with the class name "item", that is, to the pictures: */
+    let slides = document.getElementsByClassName("swiper-slide");
+
+    /* Loop through each slide in a for loop: */
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    /* Making an element block: */
+
+    slides[n - 1].style.display = "block";
+}
+
+
+function submitToTransition(){
+
+document.getElementById('ToTransitionForm').submit();
+
+}
+
+function indsutrytransition(){
+document.getElementById("from_industry").value = "";
+document.getElementById("to_industry").value ="";
+    $("#industryswitch").modal('show');
+}
+
+
+function geotransition(){
+document.getElementById("from_geo").value = "";
+document.getElementById("to_geo").value ="";
+    $("#geographyswitch").modal('show');
+}
+
+function  submitcvupload(){
+document.getElementById("myCheck").click()
+showSlides(6)
+}
+
+
+function AddJourneySection(id_btn){
+
+
+var id = "Journey-" + id_btn;
+const div = document.getElementById(id)
+const button = document.getElementById(id_btn)
+const clone = div.cloneNode(true);
+<!--var idnew = (button).parent().attr('id');-->
+<!--var idnew = "test";-->
+
+var parentDiv = button.parentNode;
+var idnew = parentDiv.getAttribute("id");
+
+clone.id = idnew;
+div.after(clone)
+
+}
+
+    showSlides({{slidenumber}});
+
+
+
+</script>
+
+
+
+
+
+
+<!-- Main Theme Script -->
+<script src="{% static 'wisfinitv0/assets/js/theme.min.js' %}"></script>
+
+<div class="modal" tabindex="-1" role="dialog" id="industryswitch">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">My indusutry transition</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="from_industry" class="form-label" >From Industry</label>
+                            <input class="form-control" type="text" id="from_industry" placeholder="From Industry" required>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="to_industry" class="form-label">To Industry</label>
+                            <input class="form-control" type="text" id="to_industry" placeholder="To Industry" required>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="modlindustrytransition" class="btn btn-primary btn-sm btn-okindustry">Add Transition</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="geographyswitch">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">My industry transition</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-5 mb-3">
+                            <label for="from_geo" class="form-label" >From</label>
+                            <input class="form-control" type="text" id="from_geo" placeholder="From Country" required>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="to_geo" class="form-label">To</label>
+                            <input class="form-control" type="text" id="to_geo" placeholder="To Country" required>
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                <button type="button" id="modgeotransition" class="btn btn-primary btn-sm btn-okgeo">Add Transition</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+
+
+{% endblock content %}
